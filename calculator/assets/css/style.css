@@ -1,0 +1,197 @@
+body{
+    background-image: linear-gradient(to right, #D4145A , #FBB03B);
+}
+
+.d{
+    width: 100%;
+    height: 100%;
+    
+}
+.device{
+    width: 340px;
+    height:600px;
+    position: absolute;
+    top: 5%;
+    padding: 0px 30px 20px;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 15px;
+    background-image: linear-gradient(black,gray);
+    border: 3px solid black;
+    
+   
+}
+.top{
+    width: 100%;
+    height: 30%;
+    
+    
+}
+.bottom {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+  "aa ab ac ad"
+  "ba bb bc bd"
+  "ca cb cc cd"
+  "da db dc dd"
+  "ea eb ec ed";
+
+}
+p{
+    width: 90%;
+    height: 10%;
+    background-color: white;
+    position: absolute;
+
+    left: 5%;
+    font-size: 2em;
+    text-align: right;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    box-shadow: 1px 0px 5px black;
+
+}
+
+.btn{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    
+}
+
+.btnCe{
+    grid-area: ad;
+}
+.btn7{
+    grid-area: ba ;
+}
+.btn8{
+    grid-area: bb ;
+}
+.btn9{
+    grid-area: bc ;
+}
+.btn4{
+    grid-area: ca ;
+}
+.btn5{
+    grid-area: cb ;
+}
+.btn6{
+    grid-area: cc ;
+}
+.btn1{
+    grid-area:  da;
+}
+.btn2{
+    grid-area: db ;
+}
+.btn3{
+    grid-area: dc ;
+}
+.btn0{
+    grid-area: ea ;
+}
+.btnF{
+    grid-area: eb ;
+}
+.btnRes{
+    grid-area: ec;
+}
+.btnD{
+    grid-area: bd;
+}
+.btnM{
+    grid-area: cd ;
+}
+.btnS{
+    grid-area: dd;
+}
+.btnA{
+    grid-area: ed ;
+}
+.btnClear{
+    grid-area: aa;
+}
+@media (min-width:600px) {
+    .device{
+        left: 25%;
+    }
+    
+}
+@media (min-width:1200px) {
+    .device{
+        width: 340px;
+        height:600px;
+        position: absolute;
+        top: 5%;
+        left: 30%;
+        
+        
+       
+    }
+    .top{
+        width: 100%;
+        height: 30%;
+        
+        
+    }
+    .bottom {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+      "aa ab ac ad"
+      "ba bb bc bd"
+      "ca cb cc cd"
+      "da db dc dd"
+      "ea eb ec ed";
+    
+    }
+    p{
+        width: 90%;
+        height: 10%;
+        background-color: white;
+        position: absolute;
+    
+        left: 5%;
+        font-size: 2em;
+        text-align: right;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        box-shadow: 1px 0px 5px black;
+    
+    }
+    
+    .btn{
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin: 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        
+    }
+}
+
+
+
