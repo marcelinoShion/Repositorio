@@ -1,0 +1,146 @@
+body{
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.app{
+    height: 600px;
+    width: 300px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+
+    background-color: skyblue;
+}
+.sDivTop{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+.sDiv{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.scoreTitle , .score {
+    font-size: 1.6em;
+    font-weight: bold;
+    opacity: 70%;
+}
+.score li {
+    text-decoration: none;
+}
+
+
+.question {
+    margin-top: 10%;
+    height: 10%;
+    word-wrap: break-word;
+    margin-left: 10px;
+    font-size: 1.2em;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+.cDiv{
+    display: flex;
+    margin: 30px 3px;
+    height: 30px;
+
+}
+.cDiv:hover{
+    cursor: pointer;
+}
+
+.choice{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choiceText{
+    background-color: whitesmoke;
+    height: 26px;
+    width: 80%;
+    padding: 2px 4px ;
+    display: flex;
+    align-items: center;
+}
+
+.nqBtn{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nextQuestion{
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+
+    
+}
+.returnBtn{
+    height: 30px;
+    
+}
+.returnBtn button{
+    border-radius: 10px;
+    background-color: dodgerblue;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+@media (min-width:600px) {
+    .app{
+        
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    
+    
+    
+    }
+    
+}
+@media (min-width:1200px) {
+    .app{
+        
+        position: absolute;
+        top: 5%;
+        left: 40%;
+    
+    
+    
+    }
+    
+}
+
+
+
+
+
+
+
