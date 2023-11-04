@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.dark{
+    background-color: black;
+}
+.gray{
+    background-color: gray;
+}
+.light{
+    background-color: white;
+}
+section button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btnEscuro{
+    background-color: black;
+    color: white;
+}
+.btnClaro{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+

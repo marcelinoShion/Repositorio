@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ola">0</p><button id="btn" >click</button>
+    <a href="test.html"> proxima pagina</a>
+    <script>
+        let btn = document.querySelector("#btn")
+        let p = document.querySelector('#ola')
+        let st1 = JSON.parse(localStorage.names);
+        console.log(st1)
+        let arr = st1
+         let pp =  6
+
+        btn.addEventListener("click",(e)=>{
+            arr = arr.split("").map((e)=>{
+                return e != " " ? parseInt(e) : e
+            })
+            for (let index = 0; index < arr.length; index++) {
+                if(arr[index] !=  " "){
+                    if( pp >arr[index]){
+                        let prev = arr[index] 
+                        arr[index] = pp
+                        pp = prev
+                    }
+                }
+                
+            }
+            arr = arr.join("")
+            console.log(arr)
+            passValue()
+
+        })
+        function passValue(){
+            localStorage.setItem("st2",arr)
+        }
+    </script>
+</body>
+</html>

@@ -15,6 +15,15 @@
         </div>
         
     </div>
-    
+    <script>
+        let arrScr1 = "0 0 0"
+        arrScr1 = arrScr1.split("").map((e)=>{
+
+            return e != " " ? parseInt(e) : e})
+        .map((e)=>{
+            return e != " " ? e += 1 : e})
+            .join("")
+        console.log(arrScr1)
+    </script>
 </body>
 </html>

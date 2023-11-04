@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ola">0</p><button id="btn" >click</button>
+    <a href="test2.html"> proxima pagina</a>
+    <script>
+        let btn = document.querySelector("#btn")
+        let p = document.querySelector('#ola')
+        let st2 = localStorage.getItem("st2")
+        let arr = [0,0,0]
+        console.log(st2)
+        if(st2 != null){
+            p.textContent = st2
+        }
+        btn.addEventListener("click",(e)=>{
+            
+        })
+        function passValue(){
+            localStorage.arr = JSON.stringify(arr);
+        }
+    </script>
+</body>
+</html>

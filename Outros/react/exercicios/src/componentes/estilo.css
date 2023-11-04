@@ -1,0 +1,31 @@
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 10% 50px 1fr;
+    grid-row: 2fr 30% 100px;
+    grid-template-areas: 'a b c'
+                         'd e f'
+                         'g h i'
+    ;
+    grid-gap: 5px;
+}
+.container div {
+    background-color: purple;
+    color: white;
+    font-size: 1.2em;
+    margin: 5px;
+    height: 20px;
+    
+    
+}
+.div1{
+    grid-area: b;
+}
+.div2{
+    grid-area: g;
+}
+.div3{
+    grid-area: i;
+}

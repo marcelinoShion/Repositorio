@@ -1,0 +1,16 @@
+header{
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    color: #FFF;
+}
+
+.cadastro {
+    color: #FFF;
+}
+
+

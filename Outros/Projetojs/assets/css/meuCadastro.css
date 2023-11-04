@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+   height: 100vh;
+   display: flex;
+   flex-flow: column nowrap;
+}
+.container nav {
+    height: 15%;
+    background: linear-gradient(to right ,rgba(255, 0, 0, 0.6) , rgba(0, 0, 255, 0.6));
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.container nav h1 {
+    color: white;
+    font-size: 1.6em;
+}
+.entrar-cadastrar{
+    align-self: end;
+}
+.navBtn{
+    background-color:blue ;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.navBtn:hover{
+    cursor: pointer;
+}
+
+
+/* formulario */
+/* ------------------------------------------- */
+.formContainer{
+    height: 70%;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center ;
+    align-items: center ; 
+    background: linear-gradient(to right,red ,blue);
+    
+    
+}
+.container footer{
+    height: 15%;
+    background: linear-gradient(to right ,rgba(255, 0, 0, 0.6) , rgba(0, 0, 255, 0.6));
+}
+.formulario1{
+    visibility: hidden;
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    width: 200px;
+    height: 400px;
+    border-radius: 15px;
+    font-weight: bold;
+
+   
+}
+.formulario1 div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    height: 50px;
+    margin-top: 20px;
+}
+.topsair{
+    align-items: end;
+    margin-top: 0;
+    justify-items: start;
+    
+}
+.sair{
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+.sair:hover{
+    cursor: pointer;
+}
+.tituloFormulario{
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+
+}
+form,input{
+    padding: 10px;
+    
+}
+.cadastro{
+    background: linear-gradient(to right,red ,blue);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 10px;
+    padding: 15px;
+}
+.cadastro:hover{
+    cursor: pointer;
+    background: linear-gradient(to right ,rgba(255, 0, 0, 0.7) , rgba(0, 0, 255, 0.7));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.logo {
+    background-color: blue;
+    display: flex;
+    justify-content: end;
+}
+
+
+.logo img {
+    height: 100%;
+}
