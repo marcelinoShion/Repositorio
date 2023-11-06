@@ -7,7 +7,13 @@ let btnNext = document.querySelector('.nextQuestion');
 let score = document.querySelector('.score');
 let rBtn = document.querySelector('.returnBtn')
 
+let passArr = JSON.parse(localStorage.getItem('passArr'))
+let nameArr = JSON.parse(localStorage.getItem('nameArr'))
+let user = localStorage.getItem('user') == '' ? 'Player' : localStorage.getItem('user')
+console.log(user)
 
+let arr = passArr
+let name = nameArr
 // indice das perguntas
 let i = 0;
 
@@ -44,6 +50,7 @@ fetch(url).then((res)=>{
 function gameStart(){
    choice.forEach((element,index)=>{
     element.addEventListener("click",(e)=>{
+        
         if(index+1 == parseInt(questions[i].anwser)){
             choiceText[index].style.backgroundColor = "rgba(0, 255, 0, 0.466)" // resposta correta
             updateScore();
@@ -54,10 +61,12 @@ function gameStart(){
         //visibilidade do botao
         if(questions[i + 1] == undefined){
             rBtn.style.visibility = "initial"
+            passValue()
         }else{
             btnNext.style.visibility = "initial"
 
         }
+        console.log(score.textContent)
          
         
         
@@ -107,3 +116,20 @@ function updateScore (){
 
 // Colocar o score na ordem
 
+function passValue(){
+    let sc = parseInt(score.textContent)
+
+    for (let index = 0; index < arr.length; index++) {
+        if(sc > arr[index]){
+            let prev = arr[index]
+            let prevname = name[index]
+            name[index] = user 
+            user = prevname 
+            arr[index] = sc 
+            sc = prev 
+        }
+        
+    }
+    localStorage.passArr = JSON.stringify(arr)
+    localStorage.nameArr = JSON.stringify(name)
+}
