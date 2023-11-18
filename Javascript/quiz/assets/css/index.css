@@ -9,8 +9,7 @@ body{
     position: absolute;
     top: 5%;
     left: 10%;
-
-
+    border-radius: 10px;
     background-color: skyblue;
 }
 
@@ -39,6 +38,7 @@ table {
   }
 tr:nth-child(even) {
     background-color: #666464;
+    color: white;
   }
 
 
