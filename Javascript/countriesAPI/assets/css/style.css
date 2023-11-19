@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 1200px;
+    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+nav{
+    height: 200px;
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    align-items: end;
+}
+.continents{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+
+}
+.continents li {
+    list-style: none;
+    background-color: whitesmoke;
+    padding: 6px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+/* .continents li:hover {
+    cursor: pointer;
+} */
+
+/* conteudo */
+main{
+    height: 90%; 
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.card {
+    height: 300px;
+    width: 150px;
+    background-color: chocolate;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.top{
+    height: 40%;
+    width: 100%;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgDiv{
+    height: 80px;
+    width: 500px;
+}
+
+.description{
+    background-color: whitesmoke;
+    padding: 4px;
+    border-radius: 5px;
+}
+@media (min-width: 600px) {
+    .continents li {
+        width: 80px;
+        font-size: large;
+    }
+}
+@media (min-width:1200) {
+    .continents li {
+        width: 210px;
+        
+    }
+}
