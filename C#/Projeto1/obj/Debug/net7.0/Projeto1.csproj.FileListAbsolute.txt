@@ -1,0 +1,15 @@
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/bin/Debug/net7.0/Projeto1
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/bin/Debug/net7.0/Projeto1.deps.json
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/bin/Debug/net7.0/Projeto1.runtimeconfig.json
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/bin/Debug/net7.0/Projeto1.dll
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/bin/Debug/net7.0/Projeto1.pdb
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.csproj.AssemblyReference.cache
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.GeneratedMSBuildEditorConfig.editorconfig
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.AssemblyInfoInputs.cache
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.AssemblyInfo.cs
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.csproj.CoreCompileInputs.cache
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.dll
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/refint/Projeto1.dll
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.pdb
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/Projeto1.genruntimeconfig.cache
+/home/marcelino/Documentos/GitHub/Repositorio/C#/Projeto1/obj/Debug/net7.0/ref/Projeto1.dll
