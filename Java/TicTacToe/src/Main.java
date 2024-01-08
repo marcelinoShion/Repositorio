@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -56,7 +57,7 @@ public class Main {
 				Scanner  playNSc = new Scanner (System.in);
 				System.out.println("Press [1] to play again");
 				
-				int play = playNSc.nextInt();
+				int play =  playNSc.nextInt();
 				if(play == 1) {
 					game(playerChoice,machineChoice);
 				}
@@ -67,7 +68,9 @@ public class Main {
 				System.out.println("Wrong number ");
 			}
 			} catch(Exception e) {
-				System.out.println("Invalid number");
+				throw new InputMismatchException("Invalid number");
+				
+				
 			}
 		}
 		
@@ -85,8 +88,6 @@ public class Main {
 				
 				positions.add(number);
 				number += 1 ;
-				
-				
 			}
 		}
 		while (positions.size() != 0) {
@@ -94,10 +95,10 @@ public class Main {
 			print(matrix);
 			try {
 			System.out.println("Insert column :");
-			int y =  posSc.nextInt();
+			int x =  posSc.nextInt();
 			
 			System.out.println("Insert row :");
-			int x =  posSc.nextInt();
+			int y =  posSc.nextInt();
 			
 			
 			// apos receber a posicao da linha e coluna inserir na matrix o elemento x na 
@@ -120,11 +121,13 @@ public class Main {
 						if( i == y -1  && j == x - 1) {
 							continueG = false ;
 							break;
-						}// consertar jogador escolha
+						}
 						else {
 							playerPosition += 1;
 						}
+						
 					}
+					
 				}
 				for(int i = 0; i < positions.size() ; i++) {
 					if(positions.get(i) == playerPosition) {
@@ -148,9 +151,8 @@ public class Main {
 					for(int i = 0 ; i < 3 && continueF; i++) {
 						for(int j = 0 ; j < 3 && continueF ; j++) {
 							if(iteration == searchPos) {
-	
 								matrix[i][j] = mC ;
-								continueG = false ;
+								continueF = false ;
 								break;
 							}
 							searchPos += 1;
